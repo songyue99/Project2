@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  overflow:scroll;
+  outline: 0;
+  margin: 20px;
+  padding: 2%;
+  background-color: #000000;
+  cursor: move;
+  font-family: Arial, Helvetica, sans-serif;
+height: 2160px;
+}
+
+h1 {
+  color:azure;
+}
+
+h3 {
+  color:azure;
+  margin-left: 50px;
+}
+
+footer {
+  color: azure;
+}
+
+img {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 10%;
+}
+
+button {
+  background-color: rgb(21, 190, 43);
+  border-radius: 6px;
+  border-style: none;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#choose-dialect{
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+#where {
+  border-color: white;
+  width: 9%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#sound {
+  border-color: white;
+  width: 20%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#ok {
+  width: 50px;
+  background-color: rgb(135, 176, 249);
+}
+
+#meme-div {
+  display: flex;
+  flex-direction:initial;
+  margin-top: 20px;
+}
