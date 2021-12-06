@@ -1,0 +1,125 @@
+body {
+  width: 100%;
+  overflow:scroll;
+  outline: 0;
+  padding: 2%;
+  background-image: url('images/spacebg.jpg');
+  background-attachment: fixed;
+  background-size: cover; 
+  cursor: move;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 2160px;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  color:azure;
+  font-size: 3em;
+  position: center;
+}
+
+h2 {
+  color:azure;
+}
+
+h3 {
+  color:azure;
+}
+
+img {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 7%;
+}
+
+button {
+  background-color: rgb(21, 190, 43);
+  border-radius: 6px;
+  border-style: none;
+  height: 36px;
+  margin-right: 26px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffffec; 
+  color: black;
+}
+
+input {
+  border-radius: 6px;
+  height: 36px;
+  border-color: rgb(255, 255, 255);
+  margin-right: 10px;
+  background-color: white;
+}
+
+#choose-dialect{
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+#userName {
+  width: 9%;
+}
+
+#sound {
+  width: 20%;
+}
+
+#ok {
+  width: 50px;
+  background-color: rgb(135, 176, 249);
+}
+
+#meme-sec {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#guesser {
+  background-color: rgb(74, 122, 206);
+  color: white;
+}
+
+#guesser:hover {
+  background-color: #ffffffec; 
+  color: black;
+}
+
+#btnScrollToTop {
+  position:fixed;
+  right: 10px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.75);
+  color:black;
+  outline:none;
+  cursor: pointer;
+}
+
+#backHome {
+  position:fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.75);
+  color:black;
+  outline:none;
+  cursor: pointer;
+}

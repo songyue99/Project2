@@ -1,68 +1,90 @@
-body {
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow:scroll;
-  outline: 0;
-  margin: 20px;
-  padding: 2%;
-  background-color: #000000;
-  cursor: move;
-  font-family: Arial, Helvetica, sans-serif;
-height: 2160px;
 }
 
-h1 {
-  color:azure;
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 100px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h3 {
-  color:azure;
-  margin-left: 50px;
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-footer {
-  color: azure;
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-img {
-  margin-left: 50px;
-  margin-right: 50px;
-  width: 10%;
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 3rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+  padding: 2rem;
 }
 
 button {
-  background-color: rgb(21, 190, 43);
+  background-color: orange;
   border-radius: 6px;
   border-style: none;
-  height: 30px;
-  margin-right: 10px;
+  height: 42px;
+  width: 180px;
+  font-size: 22px;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color:rgb(31, 31, 31);
+  cursor: pointer;
 }
 
-#choose-dialect{
-  margin-bottom: 1%;
-  margin-top: 2%;
-}
-
-#where {
-  border-color: white;
-  width: 9%;
-  height: 25px;
-  margin-right: 10px;
-}
-
-#sound {
-  border-color: white;
-  width: 20%;
-  height: 25px;
-  margin-right: 10px;
-}
-
-#ok {
-  width: 50px;
-  background-color: rgb(135, 176, 249);
-}
-
-#meme-div {
-  display: flex;
-  flex-direction:initial;
-  margin-top: 20px;
+button:hover {
+  background-color: #ffffffec; 
+  color: black;
 }

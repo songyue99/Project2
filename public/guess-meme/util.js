@@ -34,7 +34,7 @@ function generatePixi(bgcolor) {
         antialias: true,
         transparent: false,
         autoDensity: true,
-        resolution: pixelRatio,//window.devicePixelRatio > 1 ? 2 : 1,
+        resolution: pixelRatio,
         powerPreference: "high-performance",
         backgroundColor: bgcolor
     });
@@ -56,8 +56,8 @@ function pixiResize() {
 
 function moveEvent(canvas) {
     const hammer = new Hammer(canvas);
-    hammer.add(new Hammer.Pan({direction: Hammer.DIRECTION_ALL, threshold: 0}));
-    hammer.on("pan", (e) => {                
+    hammer.add(new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }));
+    hammer.on("pan", (e) => {
         moveX = e.deltaX + offsetX;
         moveY = e.deltaY + offsetY;
         if (e.isFinal) {

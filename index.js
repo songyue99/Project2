@@ -19,7 +19,7 @@ io.sockets.on('connection',(socket) => {
         console.log('client left', socket.id);
     })
 
-    //on receiving 'mousePosition' EMIT/BROADCAST to other clients
+    //on receiving data EMIT to other clients
     socket.on('clientDialect', (data) => {
         console.log(data);
         io.sockets.emit('serverDialect',data);

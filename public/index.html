@@ -2,47 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <title>Dialect Visuals</title>
-  <!-- make a logo for the website -->
-  <!-- <link rel="shortcut icon" href="images/week1-logo.png" /> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.js"></script>
+  <title>MemeDia</title>
 </head>
 
 <body>
-  <hearder postion="center">
-    <h1>Talk to stranger with your own dialect?! <br>给听不懂你方言的小伙伴讲讲你的方言吧！
-    </h1>
-  </hearder>
 
-  <section id="choose-dialect">
-    <button id="d1">小丑竟是我自己</button>
-    <button id="d2">山上的笋都被你夺完了</button>
-    <button id="d3">绝绝子</button>
-    <button id="d4">干饭人</button>
-    <button id="d5">打工人</button>
-  </section>
+  <canvas id="bg"></canvas>
 
-  <section id="dialect-sound">
-    <input type="text" id="where" name="where" placeholder="where are you from" required>
-    <input type="text" id="sound" name="sound" placeholder="what does it sound like in your dialect?" required>
-    <button id="ok">OK</button>
-  </section>
+  <main>
 
-  <div id="meme-div"></div>
+    <header>
+      <h1>MemeDia</h1>
+      <p>🚀 A meme-gussing game with dialects that you can play with friends</p>
+    </header>
 
-  <!-- <footer position="center">This is a footer</footer> -->
+    <blockquote>
+      <p>Want to know more? Let's go!</p>
+    </blockquote>
 
-  <script src="leon.js"></script>
-  <script src="util.js"></script>
-  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-  <script src="app.js"></script>
+    <section>
+      <h2>🥲 Many dialects are dying in China </h2>
+      <p>
+        Many places in the world, including China, are witnessing the rapid disappearance of dialects - along with the
+        disappearance rich cultures behind them.
+      </p>
+      <p>
+        Dialects fade away due to many reasons: the formalization of one language (or only a few) in a nation, the need
+        to communicate in an easy and mutually-understandable language throughout globalization, and the widespread use
+        of technology (which is heavily based on the one single standard language). Dialects carry not only the
+        linguistic value of diversity but also the rich cultures in the local areas. It's extremely difficult to
+        describe or document local cultural events or rituals without dialects. People also tend to cherish a lot the
+        memories buried in them!
+      </p>
+    </section>
+
+    <section class="light">
+      <h2>🤯 So how might we save the dialects?</h2>
+
+      <p>
+        One of the effective ways to pass along dialects is to use them online: on social media, give it meanings and
+        make sound documentations.
+      </p>
+
+      <p>
+        There was a successful online campaign to revive a Danish dialect in 2015, which used a combination of sound
+        annotations and memes. It demonstrated the great power that technology can play in saving dialects in the modern
+        world, instead of destroying them.
+      </p>
+
+      <p>
+        Cantonese speakers also successfully invented sounds annotations to talk to each other online even though it is
+        only recognized as an official spoken language in Hongkong, Macau, and the Guangzhou Province.
+      </p>
+
+      <h2>🏆 Here is the game!</h2>
+
+      <p>
+        For my Connections Lab final project @IMA Low Res, I made this meme-guessing game, which utilizes dialect
+        pinyin(a way of denoting sounds and tones with English characters) as the main connection method. Through the
+        fun process, I wish to remind people of their intimate relationship with dialects and encourage them to use
+        dialect more online!
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p>Wanna try?</p>
+    </blockquote>
+
+    <section class="left">
+      <h2>🌮 How to play the game?</h2>
+      <p>
+        Form a group of no less than 2 people, pick 1 person as the describer, the rest people will be the guessors.
+        Make sure everyone's on the game page before starting the game!
+      </p>
+
+      <h3>Describer</h3>
+      <p>
+        Hi describer! Once you are on the game page, choose a meme buzzword, and describe it in your dialect. If any
+        guessor guesses correctly, tell them it's right!
+      </p>
+      <h3>Guesser</h3>
+      <p>
+        Hi guessors! On the game page, click "I'm guessing" and you'll see a list of memes that you are guessing from.
+        Feel free to ask the describer more questions about the meme! The describer would let you know if anyone guesses
+        right!
+      </p>
+
+      <button onclick="window.location.href='guess-meme/index.html'">Play now</button>
+
+    </section>
+  </main>
+
+  <script src="three.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
