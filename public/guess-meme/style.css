@@ -3,7 +3,7 @@ body {
   overflow:scroll;
   outline: 0;
   padding: 2%;
-  background-image: url('images/spacebg.jpg');
+  background-image: url('images/bgmeme.png');
   background-attachment: fixed;
   background-size: cover; 
   cursor: move;
@@ -79,7 +79,6 @@ input {
 
 #meme-sec {
   margin-top: 20px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -122,4 +121,18 @@ input {
   color:black;
   outline:none;
   cursor: pointer;
+}
+
+#describer-role {
+  background-color: rgb(21, 190, 43);
+}
+
+#guesser-role {
+  background-color: rgb(74, 122, 206);
+}
+
+#g1, #g2, #g3, #g4, #g5 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 150px;
 }

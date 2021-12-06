@@ -9,8 +9,9 @@ socket.on('connect', () => {
 // let dialectY = 20;
 // let otherY = 100;
 
-//hide input box first
+//hide input box and guesser buttons at first
 document.getElementById('dialect-sound').style.display = "none";
+document.getElementById('guess-which-meme').style.display = "none";
 
 //make scroll to top button
 let scrollToTop = document.getElementById('btnScrollToTop');
@@ -73,6 +74,9 @@ document.getElementById("guesser").addEventListener('click', () => {
         document.getElementById('meme-sec').appendChild(buzz);
         document.getElementById('meme-sec').appendChild(memes);
     }
+
+    //show meme buttons
+    document.getElementById('guess-which-meme').style.display = "block";
 })
 
 
@@ -103,6 +107,17 @@ socket.on('serverDialect', (data) => {
         thisIsText[w] = data.userName + " (Describer) : " + data.sound;
     } else {
         thisIsText[w] = data.userName + " (Guesser) : " + data.sound;
+    }
+    numI = data.number;
+    for (let i = 1; i < 6; i++) {
+        document.getElementById("g" + i).addEventListener('click', () => {
+            if (data.number == i) {
+                let correctAnswer = document.getElementById("g" + i).innerHTML;
+                document.getElementById("instruction").innerHTML = "🥳🥳🥳 Congratulations 🥳🥳🥳<br> You have guessed the meme correctly! <br> It is " + correctAnswer + ". <br> Thank you so much for participating. <br> Wish it has been fun learning another dialect. <br> Now maybe try describing a meme with your own dialect! <br> ❤️ ❤️ ❤️ ";
+                document.getElementById("guess-which-meme").style.display = "none";
+                document.getElementById("dialect-sound").style.display = "none";
+            }
+        })
     }
     w += 1;
 })

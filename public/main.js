@@ -46,7 +46,7 @@ const spaceTexture = new THREE.TextureLoader().load('img/space.jpeg');
 scene.background = spaceTexture;
 
 // Avatar
-const luTexture = new THREE.TextureLoader().load('img/lu.jpeg');
+const luTexture = new THREE.TextureLoader().load('img/3.jpeg');
 const lu = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: luTexture }));
 
 scene.add(lu);

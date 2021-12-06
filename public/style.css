@@ -88,3 +88,11 @@ button:hover {
   background-color: #ffffffec; 
   color: black;
 }
+
+#describer {
+  background-color: rgb(21, 190, 43);
+}
+
+#guesser {
+  background-color: rgb(74, 122, 206);
+}
